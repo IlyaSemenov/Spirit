@@ -12,6 +12,11 @@ from ..core.utils.timezone import TIMEZONE_CHOICES
 from ..core.utils.models import AutoSlugField
 
 
+class UserProfileManager(models.Manager):
+    def get_by_natural_key(self, user):
+        return self.get(user=user)
+
+
 class UserProfile(models.Model):
     user = models.OneToOneField(settings.AUTH_USER_MODEL, verbose_name=_("profile"), related_name='st')
 
@@ -30,6 +35,8 @@ class UserProfile(models.Model):
     topic_count = models.PositiveIntegerField(_("topic count"), default=0)
     comment_count = models.PositiveIntegerField(_("comment count"), default=0)
 
+    objects = UserProfileManager()
+
     class Meta:
         verbose_name = _("forum profile")
         verbose_name_plural = _("forum profiles")
@@ -45,6 +52,9 @@ class UserProfile(models.Model):
 
     def get_absolute_url(self):
         return reverse('spirit:user:detail', kwargs={'pk': self.user.pk, 'slug': self.slug})
+
+    def natural_key(self):
+        return (self.user,)
 
 
 class User(AbstractUser):
