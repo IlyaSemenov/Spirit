@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Spirit\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-11-23 19:55+0000\n"
+"POT-Creation-Date: 2015-12-25 14:53+0600\n"
 "PO-Revision-Date: 2015-10-14 19:35+0000\n"
 "Last-Translator: Esteban M. Castro Borsani <ecastroborsani@gmail.com>\n"
 "Language-Team: Russian (http://www.transifex.com/spirit-project/spirit/"
@@ -39,65 +39,65 @@ msgstr ""
 msgid "Current time is: %(date)s %(time)s"
 msgstr "Текущее время: %(date)s %(time)s"
 
-#: models.py:16
+#: models.py:21
 msgid "profile"
 msgstr "профиль"
 
-#: models.py:19
+#: models.py:24
 msgid "location"
 msgstr "расположение"
 
-#: models.py:20
+#: models.py:25
 msgid "last seen"
 msgstr ""
 
-#: models.py:21
+#: models.py:26
 msgid "last ip"
 msgstr "последний ip"
 
-#: models.py:22
+#: models.py:27
 msgid "time zone"
 msgstr "часовой пояс"
 
-#: models.py:23
+#: models.py:28
 msgid "administrator status"
 msgstr ""
 
-#: models.py:24
+#: models.py:29
 msgid "moderator status"
 msgstr ""
 
-#: models.py:25
+#: models.py:30
 msgid "verified"
 msgstr ""
 
-#: models.py:26
+#: models.py:31
 msgid ""
 "Designates whether the user has verified his account by email or by other "
 "means. Un-select this to let the user activate his account."
 msgstr ""
 
-#: models.py:30
+#: models.py:35
 msgid "topic count"
 msgstr ""
 
-#: models.py:31
+#: models.py:36
 msgid "comment count"
 msgstr "количество комментариев"
 
-#: models.py:34
+#: models.py:41
 msgid "forum profile"
 msgstr ""
 
-#: models.py:35
+#: models.py:42
 msgid "forum profiles"
 msgstr ""
 
-#: models.py:56
+#: models.py:66
 msgid "user"
 msgstr "пользователь"
 
-#: models.py:57
+#: models.py:67
 msgid "users"
 msgstr "пользователи"
 

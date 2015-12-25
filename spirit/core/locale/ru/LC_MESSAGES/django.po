@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Spirit\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-11-23 19:55+0000\n"
+"POT-Creation-Date: 2015-12-25 14:50+0600\n"
 "PO-Revision-Date: 2015-07-25 18:00+0000\n"
 "Last-Translator: Esteban M. Castro Borsani <ecastroborsani@gmail.com>\n"
 "Language-Team: Spirit\n"
@@ -251,9 +251,3 @@ msgstr "(GMT +11:30) Остров Норфолк"
 #: utils/timezone.py:42
 msgid "(GMT +12:00) Auckland, Wellington, Fiji, Kamchatka"
 msgstr "(GMT +12:00) Окленд, Веллингтон, Фиджи, Камчатка"
-
-#~ msgid "User activation"
-#~ msgstr "Активация пользователя"
-
-#~ msgid "Email change"
-#~ msgstr "Смена почты"
