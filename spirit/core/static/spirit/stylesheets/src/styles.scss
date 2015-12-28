@@ -42,53 +42,9 @@
 
 //apps
 @import "apps/topic";
+@import "apps/profile";
 
 
-
-//profile
-
-.profile-img {
-  @include span-columns(4);
-  margin-bottom: $base-spacing-size;
-  text-align: center;
-}
-
-.profile-avatar {
-  width: 200px;
-  height: 200px;
-  border-radius: 100px;
-}
-
-.profile-username {
-  font-size: 21px;
-}
-
-.profile-info {
-  margin-bottom: $base-spacing-size;
-  text-align: center;
-}
-
-.profile-track {
-  @extend %inline-list;
-}
-
-.profile-title {
-  text-align: left;
-}
-
-.profile-date {
-  text-align: left;
-}
-
-.private-message {
-  margin-bottom: $base-spacing-size * 2;
-  text-align: center;
-}
-
-.profile-preferences {
-  margin-bottom: $base-spacing-size * 2;
-  text-align: center;
-}
 
 //private
 
