@@ -31,6 +31,7 @@
 @import "objects/rows";
 @import "objects/comments";
 @import "objects/menu";
+@import "objects/preference";
 
 //partials
 @import "partials/layout";
@@ -46,19 +47,6 @@
 @import "apps/topic_private";
 
 
-
-//preferences
-
-.preference-label {
-  font-size: 18px;
-  margin-bottom: $half-spacing-size;
-}
-
-.preference-desc {
-  margin: 0;
-  margin-bottom: $base-spacing-size;
-  padding: 0 $half-spacing-size;
-}
 
 //login
 
