@@ -684,34 +684,3 @@ ul.reply-markdown {
 	text-align: right;
   }
 }
-
-
-
-  
-/*
-div.container {
-  @include outer-container;
-  
-  div.element {
-    @include span-columns(4);
-	//styles
-
-	@include media( $medium ) {
-      @include span-columns(4);
-	  //styles
-    }
-	
-	@include media( $medium-only ) {
-	  @include omega(2n);
-	  //only for omega.
-    }
-	
-	@include media( $large ) {
-      @include span-columns(3);
-	  //styles
-	}
-  }
-  
-  
-}
-*/
