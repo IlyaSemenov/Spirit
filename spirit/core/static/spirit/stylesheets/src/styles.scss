@@ -43,34 +43,9 @@
 //apps
 @import "apps/topic";
 @import "apps/profile";
+@import "apps/topic_private";
 
 
-
-//private
-
-.private-participants {
-  @include span-columns(4);
-  margin-bottom: $half-spacing-size;
-  
-  @include media( $medium ) {
-    @include span-columns(4);
-  }
-}
-
-.private-leave {
-  @include span-columns(4);
-  margin-bottom: $base-spacing-size;
-  
-  @include media( $medium ) {
-    @include span-columns(4);
-	text-align: right;
-  }
-}
-
-.participants-menu {
-  @extend %menu;
-  margin-bottom: $half-spacing-size;
-}
 
 //preferences
 
