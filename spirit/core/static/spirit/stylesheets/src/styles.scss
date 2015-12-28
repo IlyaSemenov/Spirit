@@ -1,50 +1,22 @@
 @import "emojis";
 
-//neat grid + bourbon
-@import "vendors/bourbon/bourbon";
-@import "variables/grid-settings";
-@import "vendors/neat/neat";
+// low level dependencies
+@import "spirit-baseline";
 
-//variables
-@import "variables/base";
-@import "variables/mixins";
-@import "variables/colors";
-@import "variables/functions/modular-scale";
-@import "variables/functions/px-to-rem";
+//neat the rest
+@import "neat-helpers";
+@import "grid/box-sizing";
+@import "grid/row";
+@import "grid/shift";
+@import "grid/pad";
+@import "grid/fill-parent";
+@import "grid/to-deprecate";
+@import "grid/visual-grid";
+@import "grid/display-context";
+@import "grid/direction-context";
 
-//elements
-@import "elements/normalize";
-@import "elements/reset";
-@import "elements/layout";
-@import "elements/forms";
-@import "elements/fonts";
-@import "elements/links";
-@import "elements/lists";
-@import "elements/headings";
+// base tags overrides
+@import "spirit-elements";
 
-//objects
-@import "objects/patterns";
-@import "objects/buttons";
-@import "objects/media";
-@import "objects/tabs";
-@import "objects/side-menu";
-@import "objects/rows";
-@import "objects/comments";
-@import "objects/menu";
-@import "objects/preference";
-@import "objects/flash_messages";
-
-//partials
-@import "partials/layout";
-@import "partials/header";
-@import "partials/footer";
-@import "partials/headings";
-@import "partials/forms";
-@import "partials/video";
-
-//apps
-@import "apps/topic";
-@import "apps/profile";
-@import "apps/topic_private";
-@import "apps/user";
-@import "apps/admin";
+// all self specific bricks
+@import "spirit-ui";
