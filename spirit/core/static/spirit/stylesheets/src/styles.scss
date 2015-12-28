@@ -32,6 +32,7 @@
 @import "objects/comments";
 @import "objects/menu";
 @import "objects/preference";
+@import "objects/flash_messages";
 
 //partials
 @import "partials/layout";
@@ -48,60 +49,6 @@
 @import "apps/user";
 
 
-
-//flash messages
-
-.messages {
-  &.is-fixed {
-    position: fixed;
-    top: 0;
-    z-index: 9999;
-    width: 100%;
-    max-width: $max-width;
-    max-height: 100%;
-    overflow-y: auto;
-  }
-}
-
-%messages {
-  display: flex;
-  margin-bottom: $base-spacing-size;
-  padding: $half-spacing-size;
-}
-
-.messages-info {
-  @extend %messages;
-  background: $light-blue;
-}
-
-.messages-error {
-  @extend %messages;
-  background: $light-red;
-}
-
-.messages-message {
-  flex: 1 100%;
-}
-
-.messages-close {
-  flex: 1 20px;
-}
-
-.messages-close-button {
-  cursor: pointer;
-}
-
-.message-title {
-  margin-bottom: $half-spacing-size;
-  
-  &.is-info {
-    color: $dark-blue;
-  }
-  
-  &.is-error {
-    color: $red;
-  }
-}
 
 //admin
 
