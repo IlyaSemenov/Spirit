@@ -30,6 +30,7 @@
 @import "objects/side-menu";
 @import "objects/rows";
 @import "objects/comments";
+@import "objects/menu";
 
 //partials
 @import "partials/layout";
@@ -43,42 +44,6 @@
 @import "apps/topic";
 
 
-
-//menu
-
-.menu,
-%menu {
-  @include media( $medium ) {
-    display: inline-block;
-  }
-	
-  li {
-    background-color: $lightest-grey;
-    margin-bottom: $quarter-spacing-size;
-	
-	&:last-child {
-      margin-bottom: 0;
-    }
-  }
-}
-
-.menu-link {
-  display: block;
-  padding: 0 $half-spacing-size;
-}
-
-.menu-item {
-  @extend %clearfix;
-  padding: 0 $half-spacing-size;
-}
-
-.menu-username {
-  float: left;
-}
-
-.menu-icon {
-  float: right;
-}
 
 //profile
 
