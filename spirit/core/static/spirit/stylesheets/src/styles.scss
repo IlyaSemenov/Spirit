@@ -47,37 +47,4 @@
 @import "apps/profile";
 @import "apps/topic_private";
 @import "apps/user";
-
-
-
-//admin
-
-.admin-tabs {
-  @extend %tabs;
-  margin-bottom: $base-spacing-size;
-}
-
-.statistics-box {
-  @include span-columns(1);
-  @include omega(4n);
-  word-wrap: break-word;
-  padding: $half-spacing-size 0;
-  margin-bottom: $base-spacing-size;
-  background: $lightest-grey;
-}
-
-.statistics-title {
-  text-align: center;
-}
-
-.statistics-count {
-  text-align: center;
-}
-
-.new-category {
-  margin-bottom: $base-spacing-size;
-  
-  @include media( $medium ) {
-	text-align: right;
-  }
-}
+@import "apps/admin";
