@@ -28,6 +28,7 @@
 @import "objects/media";
 @import "objects/tabs";
 @import "objects/side-menu";
+@import "objects/rows";
 
 //partials
 @import "partials/layout";
@@ -38,71 +39,6 @@
 @import "partials/video";
 
 
-.rows {
-  margin-bottom: $base-spacing-size;
-}
-
-.row,
-%row {
-  @extend %clearfix;
-  padding: $half-spacing-size;
-  border-top: $light-grey 1px solid;
-	  
-  &:last-child {
-	border-bottom: $light-grey 1px solid;
-  }
-}
-
-.row-title {
-  @include span-columns(4);
-  margin-bottom: $half-spacing-size;
-  
-  @include media( $medium ) {
-    @include span-columns(4);
-	margin-bottom: 0;
-  }
-}
-
-.row-link {
-  color: $dark-grey;
-  
-  &:visited,
-  &.is-visited {
-    color: $grey;
-  }
-}
-
-.row-info {
-  @include span-columns(4);
-  color: $grey;
-
-  div {
-	@extend %inline-block;
-	margin-left: $base-spacing-size;
-	
-	&:first-child {
-      margin-left: 0;
-    }
-  }
-
-  .is-new {
-    color: $red;
-  }
-  
-  @include media( $medium ) {
-    @include span-columns(4);
-	text-align: right;
-  }
-}
-
-.row-unread {
-  font-size: ms(-1);
-  background-color: $light-blue;
-}
-
-.row-edit {
-  float: right;
-}
 
 //topic list
 
