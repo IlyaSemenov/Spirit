@@ -45,19 +45,9 @@
 @import "apps/topic";
 @import "apps/profile";
 @import "apps/topic_private";
+@import "apps/user";
 
 
-
-//login
-
-.login {
-  margin-bottom: $base-spacing-size;
-}
-
-.login-link {
-  display: block;
-  margin-bottom: $quarter-spacing-size;
-}
 
 //flash messages
 
