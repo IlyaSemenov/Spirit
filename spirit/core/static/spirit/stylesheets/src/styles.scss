@@ -38,90 +38,10 @@
 @import "partials/forms";
 @import "partials/video";
 
+//apps
+@import "apps/topic";
 
 
-//topic list
-
-.categories {
-  @include span-columns(4);
-  margin-bottom: $half-spacing-size;
-  
-  @include media( $medium ) {
-    @include span-columns(4);
-  }
-}
-
-.tab-content {
-  display: none;
-}
-
-.new-topic {
-  @include span-columns(4);
-  
-  @include media( $medium ) {
-    @include span-columns(4);
-	text-align: right;
-  }
-}
-
-//topic moderate
-
-.topic-moderation {
-  margin-bottom: $base-spacing-size;
-	
-  @include media( $medium ) {
-	text-align: right;
-	
-	.menu {
-	  text-align: left;
-	}
-  }
-}
-
-.head-edit-link {
-  font-size: 14px;
-}
-
-.move-comments {
-	position: fixed;
-	bottom: 0;
-	left: 0;
-	z-index: 1;
-	display: block;
-	width: 100%;
-	background: $light-grey;
-	padding: $quarter-spacing-size 0;
-}
-
-.move-container {
-  @include outer-container;
-}
-
-.move-link,
-.move-label,
-.move-input {
-	display: inline-block;
-	vertical-align: middle;
-	margin: 0;
-	margin-left: $half-spacing-size;
-}
-
-.move-link {
-  padding: $quarter-spacing-size;
-  background: $lightest-grey;
-}
-
-.move-input {
-  input {
-	width: 100px;
-	margin: 0;
-  }
-}
-
-input.move-comment-checkbox {
-  display: inline-block;
-  margin: 0;
-}
 
 //comments
 
