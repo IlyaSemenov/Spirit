@@ -4,17 +4,18 @@ msgstr ""
 "Project-Id-Version: Spirit\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-12-25 14:53+0600\n"
-"PO-Revision-Date: 2015-07-25 18:00+0000\n"
-"Last-Translator: Esteban M. Castro Borsani <ecastroborsani@gmail.com>\n"
+"PO-Revision-Date: 2015-12-29 18:05+0600\n"
+"Last-Translator: Stepan Bakshayev <step2back@axmor.com>\n"
 "Language-Team: Spirit\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.4\n"
 
 #: flag/forms.py:32
 msgid "This flag already exists"
-msgstr ""
+msgstr "Жалоба уже подана на рассмотрение"
 
 #: flag/models.py:12
 msgid "Spam"
@@ -22,15 +23,15 @@ msgstr "Спам"
 
 #: flag/models.py:13
 msgid "Other"
-msgstr "Другой"
+msgstr "Другая"
 
 #: flag/models.py:28
 msgid "comment flag"
-msgstr ""
+msgstr "жалоба на комментарий"
 
 #: flag/models.py:29
 msgid "comments flags"
-msgstr ""
+msgstr "жалобы на коментарии"
 
 #: flag/models.py:41
 msgid "reason"
@@ -38,15 +39,15 @@ msgstr "причина"
 
 #: flag/models.py:42
 msgid "body"
-msgstr ""
+msgstr "содержание"
 
 #: flag/models.py:47
 msgid "flag"
-msgstr ""
+msgstr "жалоба"
 
 #: flag/models.py:48
 msgid "flags"
-msgstr ""
+msgstr "жалобы"
 
 #: flag/templates/spirit/comment/flag/create.html:5
 #: flag/templates/spirit/comment/flag/create.html:14
@@ -56,4 +57,4 @@ msgstr "Отчёт"
 #: flag/templates/spirit/comment/flag/create.html:9
 #, python-format
 msgid "Reporting %(username)s's comment"
-msgstr ""
+msgstr "Жалоба на комментарий от %(username)s"

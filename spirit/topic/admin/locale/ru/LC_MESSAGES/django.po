@@ -4,40 +4,42 @@ msgstr ""
 "Project-Id-Version: Spirit\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-12-25 14:51+0600\n"
-"PO-Revision-Date: 2015-07-25 18:00+0000\n"
-"Last-Translator: Esteban M. Castro Borsani <ecastroborsani@gmail.com>\n"
+"PO-Revision-Date: 2015-12-29 19:50+0600\n"
+"Last-Translator: Stepan Bakshayev <step2back@axmor.com>\n"
 "Language-Team: Spirit\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.4\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
 #: admin/templates/spirit/topic/admin/_tabs.html:4
 msgid "Deleted"
-msgstr ""
+msgstr "Удалено"
 
 #: admin/templates/spirit/topic/admin/_tabs.html:5
 msgid "Closed"
-msgstr ""
+msgstr "Закрыто"
 
 #: admin/templates/spirit/topic/admin/_tabs.html:6
 msgid "Pinned"
-msgstr ""
+msgstr "Прикреплено"
 
 #: admin/templates/spirit/topic/admin/closed.html:5
 #: admin/templates/spirit/topic/admin/closed.html:11
 msgid "Closed topics"
-msgstr ""
+msgstr "Закрытые темы"
 
 #: admin/templates/spirit/topic/admin/deleted.html:5
 msgid "Deleted Topics"
-msgstr ""
+msgstr "Удаленные темы"
 
 #: admin/templates/spirit/topic/admin/deleted.html:11
 msgid "Deleted topics"
-msgstr ""
+msgstr "Удаленные темы"
 
 #: admin/templates/spirit/topic/admin/pinned.html:5
 #: admin/templates/spirit/topic/admin/pinned.html:11
 msgid "Pinned topics"
-msgstr ""
+msgstr "Прикрепленные темы"

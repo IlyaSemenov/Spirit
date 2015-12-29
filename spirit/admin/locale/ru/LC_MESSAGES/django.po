@@ -4,13 +4,15 @@ msgstr ""
 "Project-Id-Version: Spirit\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-12-25 14:52+0600\n"
-"PO-Revision-Date: 2015-07-25 18:00+0000\n"
-"Last-Translator: Esteban M. Castro Borsani <ecastroborsani@gmail.com>\n"
+"PO-Revision-Date: 2015-12-29 19:48+0600\n"
+"Last-Translator: Stepan Bakshayev <step2back@axmor.com>\n"
 "Language-Team: Spirit\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.4\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
 #: forms.py:13
 msgid "site name"
@@ -22,19 +24,19 @@ msgstr "Описание сайта"
 
 #: forms.py:15
 msgid "footer snippet"
-msgstr ""
+msgstr "содержание подвала"
 
 #: forms.py:17
 msgid "This gets rendered just before the footer in your template."
-msgstr ""
+msgstr "Содержимое будет выведено на страницу перед подвалом."
 
 #: forms.py:18
 msgid "comments per page"
-msgstr ""
+msgstr "комментариев на страницу"
 
 #: forms.py:19
 msgid "topics per page"
-msgstr ""
+msgstr "тем на страницу"
 
 #: templates/spirit/admin/_side_menu.html:3
 msgid "Show menu"
@@ -84,11 +86,11 @@ msgstr "Программное обеспечение"
 
 #: templates/spirit/admin/dashboard.html:17
 msgid "Installed"
-msgstr ""
+msgstr "Установленная"
 
 #: templates/spirit/admin/dashboard.html:18
 msgid "Latest"
-msgstr ""
+msgstr "Последняя"
 
 #: templates/spirit/admin/dashboard.html:22
 msgid "Statistics"
@@ -104,7 +106,7 @@ msgstr "Комментарии"
 
 #: templates/spirit/admin/dashboard.html:39
 msgid "Likes"
-msgstr ""
+msgstr "Нравится"
 
 #: views.py:30
 msgid "Settings updated!"
