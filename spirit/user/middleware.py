@@ -3,6 +3,7 @@
 from __future__ import unicode_literals
 
 from django.conf import settings
+from django.contrib.auth import get_user_model
 from django.contrib.auth import logout
 from django.utils import timezone
 
@@ -12,6 +13,9 @@ from .models import UserProfile
 class TimezoneMiddleware(object):
 
     def process_request(self, request):
+        if not isinstance(request.user, get_user_model()):
+            return
+
         if request.user.is_authenticated():
             timezone.activate(request.user.st.timezone)
         else:
@@ -22,6 +26,9 @@ class LastIPMiddleware(object):
 
     def process_request(self, request):
         if not request.user.is_authenticated():
+            return
+
+        if not isinstance(request.user, get_user_model()):
             return
 
         last_ip = request.META['REMOTE_ADDR'].strip()
@@ -40,6 +47,9 @@ class LastSeenMiddleware(object):
         if not request.user.is_authenticated():
             return
 
+        if not isinstance(request.user, get_user_model()):
+            return
+
         threshold = settings.ST_USER_LAST_SEEN_THRESHOLD_MINUTES * 60
         delta = timezone.now() - request.user.st.last_seen
 
@@ -55,6 +65,9 @@ class ActiveUserMiddleware(object):
 
     def process_request(self, request):
         if not request.user.is_authenticated():
+            return
+
+        if not isinstance(request.user, get_user_model()):
             return
 
         if not request.user.is_active:
