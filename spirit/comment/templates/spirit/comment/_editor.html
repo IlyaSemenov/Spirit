@@ -8,6 +8,7 @@
  --><li><a class="js-box-list" href="#" title="{% trans "List" %}"><i class="fa fa-list"></i></a></li><!--
  --><li><a class="js-box-url" href="#" title="{% trans "URL" %}"><i class="fa fa-link"></i></a></li><!--
  --><li><a class="js-box-image" href="#" title="{% trans "Image" %}"><i class="fa fa-picture-o"></i></a></li><!--
+ --><li><a class="js-box-attachment" href="#" title="{% trans "Attachment" %}"><i class="fa fa-upload"></i></a></li><!--
  --><li><a class="js-box-poll" href="#" title="{% trans "Poll" %}"><i class="fa fa-bar-chart-o"></i></a></li><!--
  --><li><a class="js-box-preview" href="#" title="{% trans "Preview" %}"><i class="fa fa-eye"></i></a></li>
 </ul>
@@ -30,6 +31,10 @@
 			csrfToken: "{{ csrf_token }}",
 			target: "{% url "spirit:comment:image-upload-ajax" %}",
 			placeholderText: "{% trans "uploading {image_name}" %}"
+		} ).editor_attachment_upload( {
+			csrfToken: "{{ csrf_token }}",
+			target: "{% url "spirit:comment:attachment-upload-ajax" %}",
+			placeholderText: "{% trans "uploading {attachment_name}" %}"
 		} )
         .editor( {
 			boldedText: "{% trans "bolded text" %}",

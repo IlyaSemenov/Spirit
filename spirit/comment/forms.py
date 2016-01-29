@@ -120,3 +120,29 @@ class CommentImageForm(forms.Form):
             file.close()
 
         return file
+
+
+class CommentAttachmentForm(forms.Form):
+
+    attachment = forms.FileField()
+
+    def __init__(self, user=None, *args, **kwargs):
+        super(CommentAttachmentForm, self).__init__(*args, **kwargs)
+        self.user = user
+
+    def save(self):
+        file = self.cleaned_data['attachment']
+        file_hash = utils.get_hash(file)
+        file.name = ''.join((file_hash, os.path.splitext(file.name)[1]))
+        upload_to = os.path.join('spirit', 'attachments', str(self.user.pk))
+        file.url = os.path.join(settings.MEDIA_URL, upload_to, file.name).replace("\\", "/")
+        media_path = os.path.join(settings.MEDIA_ROOT, upload_to)
+        utils.mkdir_p(media_path)
+
+        with open(os.path.join(media_path, file.name), 'wb') as fh:
+            for c in file.chunks():
+                fh.write(c)
+
+            file.close()
+
+        return file
